@@ -1,4 +1,5 @@
 ﻿using System;
+using WorkingWithImages;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 

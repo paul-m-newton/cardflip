@@ -23,6 +23,8 @@ namespace TestUrho
 
 
             _layout = new RelativeLayout();
+
+            //
             _layout.Children.Add(view: _things[index: 0], 
                 xConstraint: Constraint.RelativeToParent(measure: parent => 0),
                 yConstraint: Constraint.RelativeToParent(measure: parent => 0),
@@ -36,6 +38,12 @@ namespace TestUrho
 
             _layout.Children.Add(view: _things[index: 2], 
                 xConstraint: Constraint.RelativeToParent(measure: parent => (parent.Width / 3) * 2 ),
+                yConstraint: Constraint.RelativeToParent(measure: parent => 0),
+                widthConstraint: Constraint.RelativeToParent(measure: parent => parent.Width / 4),
+                heightConstraint: Constraint.RelativeToParent(measure: parent => parent.Height / 3));
+
+            _layout.Children.Add(view: _things[index: 3],
+                xConstraint: Constraint.RelativeToParent(measure: parent => (parent.Width / 3) * 2),
                 yConstraint: Constraint.RelativeToParent(measure: parent => 0),
                 widthConstraint: Constraint.RelativeToParent(measure: parent => parent.Width / 4),
                 heightConstraint: Constraint.RelativeToParent(measure: parent => parent.Height / 3));
